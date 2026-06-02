@@ -6,10 +6,10 @@ import 'package:tictactoe/features/game/domain/use_cases/check_winner_use_case.d
 
 class MinimaxAiRepository implements AiRepository {
   const MinimaxAiRepository({
-    required CheckWinnerUseCase checkWinnerUseCase,
-  }) : _checkWinnerUseCase = checkWinnerUseCase;
+    required this.checkWinnerUseCase,
+  });
 
-  final CheckWinnerUseCase _checkWinnerUseCase;
+  final CheckWinnerUseCase checkWinnerUseCase;
 
   @override
   Future<int> calculateNextMove({
@@ -46,7 +46,7 @@ class MinimaxAiRepository implements AiRepository {
     required bool isMaximizing,
     required Player aiPlayer,
   }) {
-    final status = _checkWinnerUseCase.execute(board);
+    final status = checkWinnerUseCase.execute(board);
 
     final terminalScore = status.mapOrNull(
       winner: (w) => w.winner == aiPlayer ? 10.0 - depth : -10.0 + depth,
