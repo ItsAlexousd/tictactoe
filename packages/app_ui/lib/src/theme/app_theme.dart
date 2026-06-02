@@ -39,22 +39,24 @@ class AppTheme {
         seedColor: seedColor,
         brightness: Brightness.dark,
       ),
-      textTheme: baseTextTheme.copyWith(
-        displayLarge: baseTextTheme.displayLarge?.copyWith(
-          fontSize: 80,
-          fontWeight: FontWeight.w900,
-          letterSpacing: 4,
-          color: Colors.white,
-        ),
-        titleLarge: baseTextTheme.titleLarge?.copyWith(
-          fontSize: 24,
-          fontWeight: FontWeight.bold,
-          color: Colors.white,
-        ),
-      ).apply(
-        bodyColor: Colors.white,
-        displayColor: Colors.white,
-      ),
+      textTheme: baseTextTheme
+          .copyWith(
+            displayLarge: baseTextTheme.displayLarge?.copyWith(
+              fontSize: 80,
+              fontWeight: FontWeight.w900,
+              letterSpacing: 4,
+              color: Colors.white,
+            ),
+            titleLarge: baseTextTheme.titleLarge?.copyWith(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+          )
+          .apply(
+            bodyColor: Colors.white,
+            displayColor: Colors.white,
+          ),
       extensions: const [
         appColors,
         AppSpacing(),

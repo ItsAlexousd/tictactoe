@@ -17,7 +17,7 @@ class PlayerIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final resolvedSize = size ?? context.appSize.xxlg;
-    
+
     return SizedBox(
       width: resolvedSize,
       height: resolvedSize,
