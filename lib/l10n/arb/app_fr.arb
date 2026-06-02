@@ -1,0 +1,17 @@
+{
+    "@@locale": "fr",
+    "playVsCpu": "Jouer contre l'IA",
+    "@playVsCpu": {
+        "description": "Bouton pour lancer une partie contre l'ordinateur"
+    },
+    "youWin": "TU AS GAGNÉ !",
+    "youLose": "TU AS PERDU !",
+    "draw": "MATCH NUL !",
+    "playAgain": "REJOUER",
+    "restartGame": "Recommencer",
+    "human": "Humain",
+    "cpu": "IA",
+    "winner": "Gagnant",
+    "loser": "Perdant",
+    "yourTurn": "À toi de jouer"
+}

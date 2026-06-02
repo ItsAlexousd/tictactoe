@@ -7,4 +7,10 @@ extension AppThemeBuildContext on BuildContext {
 
   /// Returns the [AppSpacing] from the current theme.
   AppSpacing get appSpacing => Theme.of(this).extension<AppSpacing>()!;
+
+  /// Returns the [AppRadius] from the current theme.
+  AppRadius get appRadius => Theme.of(this).extension<AppRadius>()!;
+
+  /// Returns the [AppSize] from the current theme.
+  AppSize get appSize => Theme.of(this).extension<AppSize>()!;
 }

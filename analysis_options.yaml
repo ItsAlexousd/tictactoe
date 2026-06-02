@@ -3,7 +3,8 @@ include:
 
 analyzer:
   exclude:
-    - lib/l10n/gen/*
+    - 'lib/l10n/gen/*'
+    - '**/*.g.dart'
 
 linter:
   rules:
