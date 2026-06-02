@@ -25,3 +25,4 @@ jobs:
       flutter_version: '3.44.x'
       run_bloc_lint: false
       working_directory: 'packages/app_ui'
+      coverage_excludes: '**/*.g.dart lib/src/theme/*.dart'
