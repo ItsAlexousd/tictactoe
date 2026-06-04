@@ -14,7 +14,7 @@ This project was built with a strong focus on scalability, testability, and sepa
 ### Architecture (Clean Architecture)
 The application strictly follows Clean Architecture principles, divided into three main layers:
 
-- **Domain (`lib/features/game/domain/`)**: The pure core of the application. It contains the business entities (`Board`, `Player`, `GameStatus`), the interfaces (`AiRepository`), and business logic rules (`CheckWinnerUseCase`). It has **zero dependencies** on Flutter or third-party libraries.
+- **Domain (`lib/features/game/domain/`)**: The pure core of the application. It contains the business entities (`Board`, `Player`, `GameStatus`), the interfaces (`AiRepository`), and business logic rules (`CheckWinnerUseCase`).
 - **Data (`lib/features/game/data/`)**: Contains the concrete implementations of the domain interfaces. Here, the `MinimaxAiRepository` implements the AI algorithm, separated from the UI and core domain.
 - **Presentation (`lib/features/game/presentation/`)**: The UI and State Management layer. It consumes the Domain layer through Riverpod providers.
 
